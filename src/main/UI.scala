@@ -1,6 +1,4 @@
-package main.model
-
-class GameMapString{
+class UI{
   def gameMapToString(game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]):String ={
     var result = generateFirstRow(game_map)
 

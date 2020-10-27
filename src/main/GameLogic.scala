@@ -1,6 +1,6 @@
 class GameLogic {
   def startTheGame(field_size :Int)={
-    var initial_game_situation = Vector.fill(field_size)(Vector.fill(field_size)(0))
+    val initial_game_situation = Vector.fill(field_size)(Vector.fill(field_size)(0))
     initial_game_situation
   }
 
@@ -62,7 +62,7 @@ class GameLogic {
     } else Tuple2(-1,-1)
 
 
-    if (!(game_move.length != 2) || !(0 until 26 contains row_and_col_index._1) || !(0 until 26 contains row_and_col_index._2)){
+    if ((game_move.length != 2) || !(0 until 26 contains row_and_col_index._1) || !(0 until 26 contains row_and_col_index._2)){
     Tuple2(-1,-1)
     }else{
       row_and_col_index
@@ -70,7 +70,8 @@ class GameLogic {
   }
 
   def openAField(minesweeper_map: Vector[Vector[Int]], game_situation: Vector[Vector[Int]], game_move: String)={
-   val row_and_col_index = getRolAndColIndex(game_move)
-    //TODO: Go on from here
+    val row_and_col_index = getRolAndColIndex(game_move)
+    val updated_game_situation = game_situation.updated(row_and_col_index._1, game_situation(row_and_col_index._1).updated(row_and_col_index._2, 1))
+    updated_game_situation
   }
 }

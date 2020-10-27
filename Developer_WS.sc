@@ -31,16 +31,14 @@ def transformLetterToColumnIndex(letter:Char) = {
       column_index
 }
 
-val game_move = "a2"
-println(game_move(0))
-println(game_move(1))
+def getRolAndColIndex(game_move:String)={
 
-val row_and_col_index = if (transformLetterToColumnIndex(game_move(0)) != '-'){
-      val column_index = transformLetterToColumnIndex(game_move(0))
-      val row_index = game_move(1).asDigit
-      val row_and_col_index = Tuple2(row_index, column_index)
-      row_and_col_index
-} else if(transformLetterToColumnIndex(game_move(1)) != '-'){
+      val row_and_col_index = if (transformLetterToColumnIndex(game_move(0)) != '-'){
+            val column_index = transformLetterToColumnIndex(game_move(0))
+            val row_index = game_move(1).asDigit
+            val row_and_col_index = Tuple2(row_index, column_index)
+            row_and_col_index
+      } else if(transformLetterToColumnIndex(game_move(1)) != '-'){
             val column_index = transformLetterToColumnIndex(game_move(1))
             val row_index = game_move(0).asDigit
             val row_and_col_index = Tuple2(row_index, column_index)
@@ -48,8 +46,20 @@ val row_and_col_index = if (transformLetterToColumnIndex(game_move(0)) != '-'){
       } else Tuple2(-1,-1)
 
 
+      if ((game_move.length != 2) || !(0 until 26 contains row_and_col_index._1) || !(0 until 26 contains row_and_col_index._2)){
+            println("Here seems to be st wrong")
+            Tuple2(-1,-1)
+      }else{
+            row_and_col_index
+      }
+}
 
-println(row_and_col_index)
-println(row_and_col_index._1)
+val field_size = 9
+val game_situation = Vector.fill(field_size)(Vector.fill(field_size)(0))
+val game_move = "a2"
+val row_and_col_index = getRolAndColIndex(game_move)
+val updated_game_situation = game_situation.updated(row_and_col_index._1, game_situation(row_and_col_index._1).updated(row_and_col_index._2, 1))
+
+println(updated_game_situation)
 
 

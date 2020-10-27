@@ -18,7 +18,6 @@ class GameMap(difficulty: Int){
          } yield (i, j)
 
   val minesweeper_map = incrementAroundAllMines(mine_map, index_of_mines, 0)
-  print(minesweeper_map.toString())
   minesweeper_map
 
   def incrementFieldsAroundSpecificMine(mine_map: Vector[Vector[Int]], coordiantes_to_increment: Vector[Tuple2[Int, Int]], current_cordinate_index: Int): Vector[Vector[Int]] = {

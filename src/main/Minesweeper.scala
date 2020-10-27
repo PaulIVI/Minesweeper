@@ -5,19 +5,18 @@ import main.view.Tui
 import scala.io.StdIn.readLine
 
 object Minesweeper {
-  def main(args: Array[String]) = {
-    val controller = new Controller(new GameMap(10), new GameLogic)
-    val tui = new Tui(controller)
-    controller.notifyObservers
+  val controller = new Controller(new GameMap(10), new GameLogic)
+  val tui = new Tui(controller)
+  controller.notifyObservers
 
-    def main(args: Array[String]): Unit = {
-      var input: String = "r"
-      if (!input.isEmpty) tui.processInputLine(input)
-      else do {
-        input = readLine()
-        tui.processInputLine(input)
-      } while (input != "q")
-    }
+  def main(args: Array[String]): Unit = {
+    var input: String = ""
+    if (!input.isEmpty) tui.processInputLine(input)
+    else do {
+      input = readLine()
+      tui.processInputLine(input)
+    } while (input != "q")
+  }
 
 //    val difficulty = 10
 //
@@ -36,5 +35,4 @@ object Minesweeper {
 //
 //    printf(mapMine.toString())
 //    printf(game_situation.toString())
-  }
 }

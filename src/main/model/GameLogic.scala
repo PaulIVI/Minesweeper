@@ -1,4 +1,9 @@
-//class GameLogic {
+package main.model
+
+class GameLogic {
+  def solve(): Vector[Vector[Int]] = {
+
+  }
 //  def startTheGame(field_size :Int)={
 //    var initial_game_situation = Vector.fill(field_size)(Vector.fill(field_size)(0))
 //    initial_game_situation
@@ -70,4 +75,4 @@
 //  def openAField(minesweeper_map, game_situation, game_move)={
 //   //TODO:  test getColAndRowIndex and go on
 //  }
-//}
+}

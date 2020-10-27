@@ -1,28 +1,25 @@
 package main.model
 
-class GameMap {
+class GameMap(difficulty: Int){
+  val r = scala.util.Random
+  val probability_for_mine = 0.16
+  var mine_map = Vector.fill(difficulty)(Vector.fill(difficulty)(
+    if (r.nextFloat < probability_for_mine) {
+      9
+    } else {
+      0
+    }))
 
-  def createMap(difficulty: Int) = {
-    val r = scala.util.Random
-    val probability_for_mine = 0.16
-    var mine_map = Vector.fill(difficulty)(Vector.fill(difficulty)(
-      if (r.nextFloat < probability_for_mine) {
-        9
-      } else {
-        0
-      }))
+  val num_of_mines = mine_map.flatten.count(_ == 9)
 
-    val num_of_mines = mine_map.flatten.count(_ == 9)
+  val index_of_mines =
+    for {i <- 0 until mine_map.length; j <- 0 until mine_map(i).length
+         if (mine_map(i)(j) == 9)
+         } yield (i, j)
 
-    val index_of_mines =
-      for {i <- 0 until mine_map.length; j <- 0 until mine_map(i).length
-           if (mine_map(i)(j) == 9)
-           } yield (i, j)
-
-    val minesweeper_map = incrementAroundAllMines(mine_map, index_of_mines, 0)
-    print(minesweeper_map.toString())
-    minesweeper_map
-  }
+  val minesweeper_map = incrementAroundAllMines(mine_map, index_of_mines, 0)
+  print(minesweeper_map.toString())
+  minesweeper_map
 
   def incrementFieldsAroundSpecificMine(mine_map: Vector[Vector[Int]], coordiantes_to_increment: Vector[Tuple2[Int, Int]], current_cordinate_index: Int): Vector[Vector[Int]] = {
     if (current_cordinate_index >= coordiantes_to_increment.length) {
@@ -65,6 +62,12 @@ class GameMap {
       Tuple2(current_index._1 + 1, current_index._2),
       Tuple2(current_index._1 + 1, current_index._2 + 1))
     coordinates_to_increment
+  }
+  def gameMapToString():String ={
+    val game_map = Vector(Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0))
+    val current_game_map = Vector(Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1))
+    val game_map_string = new GameMapString
+    game_map_string.gameMapToString(game_map, current_game_map)
   }
 }
 

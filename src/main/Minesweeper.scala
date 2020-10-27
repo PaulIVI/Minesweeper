@@ -10,12 +10,12 @@ object Minesweeper {
     println(console_string)
 
     val mine = new GameMap
-    val mapMine = mine.create_map(difficulty)
+    val mapMine = mine.createMap(difficulty)
 
-    val logic = new GameLogic
-    val game_situation = logic.start_the_game(difficulty)
-
-    printf(mapMine.toString())
-    printf(game_situation.toString())
+//    val logic = new GameLogic
+//    val game_situation = logic.startTheGame(difficulty)
+//
+//    printf(mapMine.toString())
+//    printf(game_situation.toString())
   }
 }

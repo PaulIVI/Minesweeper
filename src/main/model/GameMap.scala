@@ -1,3 +1,5 @@
+package main.model
+
 class GameMap {
 
   def createMap(difficulty: Int) = {

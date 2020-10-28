@@ -1,6 +1,6 @@
 package main.model
 
-class GameMap(difficulty: Int){
+class MinesMapBase(difficulty: Int){
   val r = scala.util.Random
   val probability_for_mine = 0.16
   var mine_map = Vector.fill(difficulty)(Vector.fill(difficulty)(
@@ -66,7 +66,7 @@ class GameMap(difficulty: Int){
   def gameMapToString():String ={
     val game_map = Vector(Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0), Vector(1,0,0,0,1,0))
     val current_game_map = Vector(Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1), Vector(0,1,2,3,0,1))
-    val game_map_string = new GameMapString
+    val game_map_string = new MinesMapString
     game_map_string.gameMapToString(game_map, current_game_map)
   }
 }

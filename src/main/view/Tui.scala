@@ -10,7 +10,7 @@ class Tui(controller: Controller) extends Observer{
   def processInputLine(input: String):Unit = {
     input match {
       case "q" =>
-      case "o"=> controller.openField(input)
+      case "o"=> controller.openField("B2")
       case "m" => controller.placeNote(input)
       case "f" => controller.solve
     }

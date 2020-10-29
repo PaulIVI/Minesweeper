@@ -12,13 +12,16 @@ class Controller(var mines_map:MinesMap) extends Observable{
   }
 
   def placeFlag(field_coordinate:(Int, Int))={
+    mines_map = mines_map.placeFlag(field_coordinate)
     notifyObservers
   }
   def placeNote(field_coordinate:(Int, Int))={
+    mines_map = mines_map.placeNote(field_coordinate)
     notifyObservers
   }
 
   def solve()={
+    mines_map = mines_map.solve(mines_map_base)
     notifyObservers
   }
 

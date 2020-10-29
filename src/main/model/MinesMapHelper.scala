@@ -54,4 +54,17 @@ class MinesMapHelper {
       row_and_col_index
     }
   }
+
+  def getCoordinatesAroundField(current_index: (Int, Int)):Vector[(Int, Int)] = {
+    val coordinates_around_field = Vector(
+      Tuple2(current_index._1 - 1, current_index._2 - 1),
+      Tuple2(current_index._1 - 1, current_index._2),
+      Tuple2(current_index._1 - 1, current_index._2 + 1),
+      Tuple2(current_index._1, current_index._2 - 1),
+      Tuple2(current_index._1, current_index._2 + 1),
+      Tuple2(current_index._1 + 1, current_index._2 - 1),
+      Tuple2(current_index._1 + 1, current_index._2),
+      Tuple2(current_index._1 + 1, current_index._2 + 1))
+    coordinates_around_field
+  }
 }

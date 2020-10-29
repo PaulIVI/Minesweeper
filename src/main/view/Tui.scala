@@ -10,25 +10,25 @@ class Tui(controller: Controller) extends Observer{
 
   def processInputLine(input: String):Unit = {
     val input_without_spaces = input.replaceAll("\\s", "")
-    val input_coordinates = input_without_spaces(1).toString + input_without_spaces(2).toString
+    val col_and_row_index = getRowAndColIndex(input_without_spaces.substring(1))
+    println(col_and_row_index)
 
-    val mines_map_helper = new MinesMapHelper
-    val row_col_index = mines_map_helper.getRolAndColIndex(input_coordinates)
-
-    if(row_col_index._1 == -1){
-      println("Falsche Eingabe")
-    }else{
-      input_without_spaces.head match {
-        case 'q' => println("Bis bald!")
-        case 'o'=> controller.openField(row_col_index)
-        case 'f' => controller.placeFlag(row_col_index)
-        case 'n' => controller.placeNote(row_col_index)
-        case 's' => controller.solve
-        case _ => println("Falsche Eingabe")
-      }
+    input_without_spaces.head match {
+      case 'q' => println("Bis bald!")
+      case 'o'=> if(col_and_row_index._1 != -1) controller.openField(col_and_row_index)
+      case 'f' => if(col_and_row_index._1 != -1) controller.placeFlag(col_and_row_index)
+      case 'n' => if(col_and_row_index._1 != -1) controller.placeNote(col_and_row_index)
+      case 's' => controller.solve
+      case _ => println("Falsche Eingabe")
     }
-
   }
+
+  def getRowAndColIndex(input:String): (Int,Int) ={
+    val mines_map_helper = new MinesMapHelper
+    if(input.length>1) mines_map_helper.getRolAndColIndex(input)
+    else (-1,-1)
+  }
+
   override def update: Boolean = { println(controller.gameMapToString);true}
 
 }

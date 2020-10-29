@@ -1,5 +1,5 @@
 package main.controller
-import main.model.{MinesMapBase, MinesMapString, MinesMap}
+import main.model.{MinesMapBase, MinesMap}
 import main.util.Observable
 
 class Controller(var mines_map:MinesMap) extends Observable{

@@ -9,17 +9,19 @@ class Tui(controller: Controller) extends Observer{
   controller.add(this)
 
   def processInputLine(input: String):Unit = {
-    val input_without_spaces = input.replaceAll("\\s", "")
+    val input_without_spaces = input.replaceAll("\\s", "").toLowerCase()
     val col_and_row_index = getRowAndColIndex(input_without_spaces.substring(1))
     println(col_and_row_index)
 
+    val wrong_input_string = "Falsche Eingabe. OXY=Open, FXY=Flag, NXY=Note, S=Solve, Q=Quitt"
+
     input_without_spaces.head match {
       case 'q' => println("Bis bald!")
-      case 'o'=> if(col_and_row_index._1 != -1) controller.openField(col_and_row_index)
-      case 'f' => if(col_and_row_index._1 != -1) controller.placeFlag(col_and_row_index)
-      case 'n' => if(col_and_row_index._1 != -1) controller.placeNote(col_and_row_index)
+      case 'o'=> if(col_and_row_index._1 != -1) controller.openField(col_and_row_index) else println(wrong_input_string)
+      case 'f' => if(col_and_row_index._1 != -1) controller.placeFlag(col_and_row_index) else println(wrong_input_string)
+      case 'n' => if(col_and_row_index._1 != -1) controller.placeNote(col_and_row_index) else println(wrong_input_string)
       case 's' => controller.solve
-      case _ => println("Falsche Eingabe")
+      case _ => println(wrong_input_string)
     }
   }
 

@@ -13,6 +13,9 @@ class TuiTest extends AnyWordSpec with Matchers{
     "do nothing on input 'q'" in {
       tui.processInputLine("q")
     }
+    "do nothing on input '123456'" in {
+      tui.processInputLine("123456")
+    }
     "do nothing on input 'qw5'" in {
       tui.processInputLine("qw5")
     }
@@ -20,8 +23,24 @@ class TuiTest extends AnyWordSpec with Matchers{
       tui.processInputLine("ob2")
       controller.mines_map.situation(2)(1)should be(1)
     }
+    "open one field in the game map on input 'OC4' " in{
+      tui.processInputLine("OC4")
+      controller.mines_map.situation(3)(3)should be(1)
+    }
     "do nothing on input ob22" in{
       tui.processInputLine("ob22")
+    }
+    "set one field in the game map to '2' on input 'fc3' and back to '0' if it is called again" in{
+      tui.processInputLine("fc3")
+      controller.mines_map.situation(3)(2)should be(2)
+      tui.processInputLine("fc3")
+      controller.mines_map.situation(3)(2)should be(0)
+    }
+    "set one field in the game map to '3' on input 'nd4' and back to '0' if it is called again" in{
+      tui.processInputLine("nd4")
+      controller.mines_map.situation(4)(3)should be(3)
+      tui.processInputLine("nd4")
+      controller.mines_map.situation(4)(3)should be(0)
     }
     "the function getRowAndColIndex should return (-1,-1) on input 'a'" in{
       tui.getRowAndColIndex("a") should be((-1,-1))
@@ -39,5 +58,6 @@ class TuiTest extends AnyWordSpec with Matchers{
       //todo fix this problem
       tui.getRowAndColIndex("bb") should be((-1,-1))
     }
+
   }
 }

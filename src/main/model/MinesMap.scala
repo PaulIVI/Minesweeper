@@ -102,7 +102,6 @@ case class MinesMap(situation: Vector[Vector[Int]]) {
             else 2
         }
     }
-    println(solved_map)
     if (solved_map.flatten.contains(3)){
       copy(Vector.fill(mines_map_base.minesweeper_map.length)(Vector.fill(mines_map_base.minesweeper_map.length)(1)))
     }

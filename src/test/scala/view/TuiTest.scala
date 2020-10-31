@@ -1,4 +1,4 @@
-package view
+package scala.view
 
 import main.controller.Controller
 import main.model.MinesMap

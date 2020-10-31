@@ -1,10 +1,11 @@
 import main.controller.Controller
-import main.model.{MinesMap}
+import main.model.MinesMap
+import main.model.MinesMap
 import main.view.Tui
 
 import scala.io.StdIn.readLine
 
-object Minesweeper{
+object Minesweeper {
   val controller = new Controller(new MinesMap(10))
   val tui = new Tui(controller)
   controller.notifyObservers

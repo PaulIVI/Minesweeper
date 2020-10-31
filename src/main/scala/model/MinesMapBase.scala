@@ -1,5 +1,7 @@
 package main.model
 
+import main.model.MinesMapHelper
+
 class MinesMapBase(difficulty: Int){
   val r = scala.util.Random
   val probability_for_mine = 0.16

@@ -7,7 +7,7 @@ class Controller(var mines_map:MinesMap) extends Observable{
   val mines_map_base = new MinesMapBase(10)
 
   def openField(field_coordinate:(Int, Int))={
-    mines_map = mines_map.openField(field_coordinate, mines_map_base)
+    mines_map = mines_map.openField(field_coordinate, mines_map_base.minesweeper_map)
     notifyObservers
   }
 

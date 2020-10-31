@@ -1,5 +1,7 @@
 package main.model
 
+import main.model.{MinesMapHelper, MinesMapString}
+
 case class MinesMap(situation: Vector[Vector[Int]]) {
   def this(difficulty: Int) = this(Vector.fill(difficulty)(Vector.fill(difficulty)(0)))
 

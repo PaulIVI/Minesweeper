@@ -75,11 +75,21 @@ class TuiTest extends AnyWordSpec with Matchers{
       "return (-1,-1) on input '22'" in {
         tui.getRowAndColIndex("22") should be((-1, -1))
       }
-      //"the function getRowAndColIndex should return (-1,-1) on input 'bb'" in{
-      //  //todo fix this proble
-      //  tui.getRowAndColIndex("bb") should be((-1,-1))
-      // }
-
+      "return (-1,-1) on input 'B?'" in {
+        tui.getRowAndColIndex("B?") should be((-1, -1))
+      }
+      "return (-1,-1) on input '  '" in {
+        tui.getRowAndColIndex("  ") should be((-1, -1))
+      }
+      "return (-1,-1) on input 'b15'" in {
+        tui.getRowAndColIndex("b15") should be((-1, -1))
+      }
+      "return (-1,-1) on input '1b'" in {
+        tui.getRowAndColIndex("1b") should be((-1, -1))
+      }
+      "the function getRowAndColIndex should return (-1,-1) on input 'bb'" in{
+        tui.getRowAndColIndex("bb") should be((-1,-1))
+       }
     }
   }
 }

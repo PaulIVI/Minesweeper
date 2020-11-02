@@ -34,7 +34,14 @@ class MinesMapHelper {
     column_index
   }
 
-  def getRolAndColIndex(game_move:String)={
+  def getRolAndColIndex(letter:String, digit: String, mines_map_size: Int):(Int,Int)={
+    val col_index = transformLetterToColumnIndex(letter(0).toChar)
+    val row_index = digit.toInt
+    if(row_index >= mines_map_size || col_index >= mines_map_size) (-1,-1)
+    else (row_index, col_index)
+  }
+
+  def getRolAndColIndex_1(game_move:String)={
 
     val row_and_col_index = if (transformLetterToColumnIndex(game_move(0)) != '-'){
       val column_index = transformLetterToColumnIndex(game_move(0))

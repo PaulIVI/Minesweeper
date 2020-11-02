@@ -27,7 +27,8 @@ class Tui(controller: Controller) extends Observer{
 
   def getRowAndColIndex(input:String): (Int,Int) ={
     val mines_map_helper = new MinesMapHelper
-    if(input.length>1) mines_map_helper.getRolAndColIndex(input)
+    val split = input.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")
+    if(split.length == 2 && split(0).length == 1 && split(1).forall(_.isDigit) && split(1).length < 3) mines_map_helper.getRolAndColIndex(split(0), split(1), controller.mines_map_base.minesweeper_map(0).length)
     else (-1,-1)
   }
 

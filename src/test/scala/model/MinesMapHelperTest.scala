@@ -21,13 +21,13 @@ class MinesMapHelperTest extends AnyWordSpec with Matchers {
   }
   "The function getRolAndColIndex" should{
     "Return (1,1) for the input 'A0'" in{
-      mines_map_helper.getRolAndColIndex("A0") should be((0,0))
+      mines_map_helper.getRolAndColIndex("A","0", 10) should be((0,0))
     }
     "Return (-1,-1) for the input 'B?'" in{
-      mines_map_helper.getRolAndColIndex("B?") should be((-1,-1))
+      mines_map_helper.getRolAndColIndex("B","99", 10) should be((-1,-1))
     }
     "Return (-1,-1) for the input '?B'" in{
-      mines_map_helper.getRolAndColIndex("?B") should be((-1,-1))
+      mines_map_helper.getRolAndColIndex("?","80", 10) should be((-1,-1))
     }
   }
 

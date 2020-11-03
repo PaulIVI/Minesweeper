@@ -34,24 +34,11 @@ class MinesMapHelper {
     column_index
   }
 
-  def getRolAndColIndex(game_move:String)={
-
-    val row_and_col_index = if (transformLetterToColumnIndex(game_move(0)) != '-'){
-      val column_index = transformLetterToColumnIndex(game_move(0))
-      val row_index = game_move(1).asDigit
-      val row_and_col_index = Tuple2(row_index, column_index)
-      row_and_col_index
-    } else if(transformLetterToColumnIndex(game_move(1)) != '-'){
-      val column_index = transformLetterToColumnIndex(game_move(1))
-      val row_index = game_move(0).asDigit
-      val row_and_col_index = Tuple2(row_index, column_index)
-      row_and_col_index
-    } else Tuple2(-1,-1)
-    if ((game_move.length != 2) || !(0 until 26 contains row_and_col_index._1) || !(0 until 26 contains row_and_col_index._2)){
-      Tuple2(-1,-1)
-    }else{
-      row_and_col_index
-    }
+  def getRolAndColIndex(letter:String, digit: String, mines_map_size: Int):(Int,Int)={
+    val col_index = transformLetterToColumnIndex(letter(0).toChar)
+    val row_index = digit.toInt
+    if(row_index >= mines_map_size || col_index >= mines_map_size) (-1,-1)
+    else (row_index, col_index)
   }
 
   def getCoordinatesAroundField(current_index: (Int, Int)):Vector[(Int, Int)] = {

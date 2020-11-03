@@ -2,17 +2,25 @@ package main.model
 
 class MinesMapString{
   def gameMapToString(game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]):String ={
-    var result = generateFirstRow(game_map)
+    val first_row = generateFirstRow(game_map)
+    val result = generateRestOfGrid(first_row, game_map, current_game_map)
+    result
+  }
 
+  def generateRestOfGrid(first_row: String, game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]): String ={
+    var result = first_row
     current_game_map.zipWithIndex.map{
       case (row, row_index) => row.zipWithIndex.map {
-        case (value, column_index) =>
-          if (column_index == 0) result += row_index + " "
-          result += returnVisibleChar(value, row_index, column_index, game_map)
-          if(column_index == row.length-1) result += "\n"
+        case (value, column_index) => result += addVectorElementToString(value, row, row_index, column_index, game_map)
       }
     }
     result
+  }
+  def addVectorElementToString(value:Int, row:Vector[Int], row_index:Int, column_index:Int, game_map:Vector[Vector[Int]]): String ={
+    val result1 = if (column_index == 0) row_index + " " else ""
+    val result2 = result1 + returnVisibleChar(value, row_index, column_index, game_map)
+    val result3 = if(column_index == row.length-1) result2 + "\n" else result2
+    result3
   }
 
   def generateFirstRow(game_map:Vector[Vector[Int]]): String ={

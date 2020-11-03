@@ -3,12 +3,12 @@ package main.model
 class MinesMapString{
   def gameMapToString(game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]):String ={
     val first_row = generateFirstRow(game_map)
-    val result = generateRestOfGrid(first_row, game_map, current_game_map)
-    result
+    val rest_of_grid = generateRestOfGrid(game_map, current_game_map)
+    first_row + rest_of_grid
   }
 
-  def generateRestOfGrid(first_row: String, game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]): String ={
-    var result = first_row
+  def generateRestOfGrid(game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]): String ={
+    var result = ""
     current_game_map.zipWithIndex.map{
       case (row, row_index) => row.zipWithIndex.map {
         case (value, column_index) => result += addVectorElementToString(value, row, row_index, column_index, game_map)

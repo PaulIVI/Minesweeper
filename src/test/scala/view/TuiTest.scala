@@ -27,6 +27,10 @@ class TuiTest extends AnyWordSpec with Matchers{
       tui.processInputLine("OC4")
       controller.mines_map.situation(4)(2) should be(1)
     }
+    "place a flag in the game map on input 'fa2' " in {
+      tui.processInputLine("fa2")
+      controller.mines_map.situation(2)(0) should be(2)
+    }
     "do nothing on input ob22" in {
       tui.processInputLine("ob22")
     }

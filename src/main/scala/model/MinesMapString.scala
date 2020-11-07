@@ -8,13 +8,13 @@ class MinesMapString{
   }
 
   def generateRestOfGrid(game_map:Vector[Vector[Int]], current_game_map:Vector[Vector[Int]]): String ={
-    var result = ""
-    current_game_map.zipWithIndex.map{
+    val string_list_from_current_game_map = current_game_map.zipWithIndex.map{
       case (row, row_index) => row.zipWithIndex.map {
-        case (value, column_index) => result += addVectorElementToString(value, row, row_index, column_index, game_map)
+        case (value, column_index) => addVectorElementToString(value, row, row_index, column_index, game_map)
       }
     }
-    result
+    val current_game_map_string = string_list_from_current_game_map.map(n => n.mkString("")).mkString("")
+    current_game_map_string
   }
   def addVectorElementToString(value:Int, row:Vector[Int], row_index:Int, column_index:Int, game_map:Vector[Vector[Int]]): String ={
     val result1 = if (column_index == 0) row_index + " " else ""
@@ -25,13 +25,9 @@ class MinesMapString{
 
   def generateFirstRow(game_map:Vector[Vector[Int]]): String ={
     val abc = Vector("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
-    var firstRow = "  "
-    game_map.zipWithIndex.foreach{
-      case (n, n_index) =>
-        firstRow += abc(n_index) + " "
-        if(n_index == game_map.length-1) firstRow += "\n"
-    }
-    firstRow
+    val abc_correct_length = abc.slice(0, game_map.length)
+    val first_row = "  " + abc_correct_length.mkString(" ") + " \n"
+    first_row
   }
   def returnVisibleChar(value:Int, row_index:Int, column_index:Int, game_map:Vector[Vector[Int]]) =
     value match {

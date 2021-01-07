@@ -12,10 +12,12 @@ object Minesweeper {
 
   def main(args: Array[String]): Unit = {
     var input: String = ""
-    if (!input.isEmpty) tui.processInputLine(input)
-    else do {
-      input = readLine()
-      tui.processInputLine(input)
-    } while (input != "q")
+    if (!input.isEmpty) then tui.processInputLine(input)
+    else
+      while
+        input != "q"
+      do
+        input = readLine()
+        tui.processInputLine(input)
   }
 }

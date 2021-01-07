@@ -7,13 +7,11 @@ case class MinesMap(situation: Vector[Vector[Int]]) {
   val printer = new MinesMapString
 
   def openField(row_and_col_index: (Int, Int), mines_map_base: Vector[Vector[Int]]): MinesMap = {
-    if (field_is_bomb(row_and_col_index, mines_map_base)) {
-      copy(game_lost(mines_map_base))
-    }
-    else {
+    if (field_is_bomb(row_and_col_index, mines_map_base)) then copy(game_lost(mines_map_base))   
+    else 
       if (field_is_zero(row_and_col_index, mines_map_base)) openSeveralFields(row_and_col_index, mines_map_base)
       else openOneField(row_and_col_index)
-    }
+    
   }
 
   def placeFlag(row_and_col_index: (Int, Int)) = {
@@ -100,11 +98,10 @@ case class MinesMap(situation: Vector[Vector[Int]]) {
   def get_updated_situation(fields_to_open: Vector[(Int, Int)]) = {
     situation.zipWithIndex.map { case (row, row_index) =>
       row.zipWithIndex.map { case (value, value_index) =>
-        if (fields_to_open.contains((row_index, value_index))) {
+        if (fields_to_open.contains((row_index, value_index))) then
           1
-        } else {
+        else
           value
-        }
       }
     }
   }
@@ -122,38 +119,31 @@ case class MinesMap(situation: Vector[Vector[Int]]) {
   }
 
   def checkForZeros(coordinates_around_field: Vector[(Int, Int)], already_collected_zeros: Vector[(Int, Int)], already_collected_but_not_checked_zeros: Vector[(Int, Int)], mines_map_base: Vector[Vector[Int]]): (Vector[(Int, Int)], Vector[(Int, Int)]) = {
-    if (coordinates_around_field.isEmpty) {
-      (already_collected_zeros, already_collected_but_not_checked_zeros)
-    } else {
-      if ((mines_map_base.indices contains (coordinates_around_field(0)._1)) && (mines_map_base.indices contains (coordinates_around_field(0)._2))) {
-        if (!(already_collected_zeros.contains(coordinates_around_field(0))) && mines_map_base(coordinates_around_field(0)._1)(coordinates_around_field(0)._2) == 0) {
+    if (coordinates_around_field.isEmpty) then (already_collected_zeros, already_collected_but_not_checked_zeros)
+    else
+      if ((mines_map_base.indices contains (coordinates_around_field(0)._1)) && (mines_map_base.indices contains (coordinates_around_field(0)._2))) then 
+        if (!(already_collected_zeros.contains(coordinates_around_field(0))) && mines_map_base(coordinates_around_field(0)._1)(coordinates_around_field(0)._2) == 0) then
           checkForZeros(coordinates_around_field.drop(1), already_collected_zeros :+ coordinates_around_field(0), already_collected_but_not_checked_zeros :+ coordinates_around_field(0), mines_map_base)
-        } else {
+        else
           checkForZeros(coordinates_around_field.drop(1), already_collected_zeros, already_collected_but_not_checked_zeros, mines_map_base)
-        }
-      } else {
+      else
         checkForZeros(coordinates_around_field.drop(1), already_collected_zeros, already_collected_but_not_checked_zeros, mines_map_base)
-      }
-    }
   }
 
   def getEveryConnectedZero(already_collected_zeros: Vector[(Int, Int)], already_collected_but_not_checked_zeros: Vector[(Int, Int)], mines_map_base: Vector[Vector[Int]]): Vector[(Int, Int)] = {
-    if (already_collected_but_not_checked_zeros.isEmpty) {
+    if (already_collected_but_not_checked_zeros.isEmpty) then
       already_collected_zeros
-    } else {
+    else
       val coordinates_around_field = helper.getCoordinatesAroundField(already_collected_but_not_checked_zeros(0))
       val already_collected_zeros_and_unchecked = checkForZeros(coordinates_around_field, already_collected_zeros, already_collected_but_not_checked_zeros, mines_map_base)
       getEveryConnectedZero(already_collected_zeros_and_unchecked._1, already_collected_zeros_and_unchecked._2.drop(1), mines_map_base)
-    }
   }
 
   def getFieldsAroundZero(every_connected_zero: Vector[(Int, Int)], fields_to_open: Vector[(Int, Int)]): Vector[(Int, Int)] = {
-    if (every_connected_zero.isEmpty) {
-      fields_to_open.distinct
-    } else {
+    if (every_connected_zero.isEmpty) then fields_to_open.distinct
+    else
       val coordinates_around_field = helper.getCoordinatesAroundField(every_connected_zero(0))
       getFieldsAroundZero(every_connected_zero.drop(1), fields_to_open ++ coordinates_around_field)
-    }
   }
 
   def getFieldsToOpenBecause0(row_and_col_index: (Int, Int), mines_map_base: Vector[Vector[Int]]) = {

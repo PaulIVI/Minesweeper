@@ -19,7 +19,7 @@ class Tui(controller: Controller) extends Observer{
       case 'o'=> if(col_and_row_index._1 != -1) controller.openField(col_and_row_index) else println(wrong_input_string)
       case 'f' => if(col_and_row_index._1 != -1) controller.placeFlag(col_and_row_index) else println(wrong_input_string)
       case 'n' => if(col_and_row_index._1 != -1) controller.placeNote(col_and_row_index) else println(wrong_input_string)
-      case 's' => controller.solve
+      case 's' => controller.solve()
       case _ => println(wrong_input_string)
     }
   }
@@ -27,7 +27,7 @@ class Tui(controller: Controller) extends Observer{
   def getRowAndColIndex(input:String): (Int,Int) ={
     val mines_map_helper = new MinesMapHelper
     val split_digits_letter = input.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")
-    if(isInputCorrect(split_digits_letter)) mines_map_helper.getRolAndColIndex(split_digits_letter(0), split_digits_letter(1), controller.mines_map_base.minesweeper_map(0).length)
+    if(isInputCorrect(split_digits_letter)) then mines_map_helper.getRolAndColIndex(split_digits_letter(0), split_digits_letter(1), controller.mines_map_base.minesweeper_map(0).length)
     else (-1,-1)
   }
   def isInputCorrect(split_digits_letter:Array[String]): Boolean ={

@@ -17,24 +17,23 @@
         "classpath": [
             "/home/till/Dokumente/AA Master Semester C/Moderne Programmiersprachen/Minesweeper/.bloop/minesweeper/scala-3.0.0-M2/classes",
             "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3.0.0-M2/3.0.0-M2/scala3-library_3.0.0-M2-3.0.0-M2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3.0.0-M2/3.3.0-SNAP3/scalatest_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3.0.0-M2/3.3.0-SNAP3/scalactic_3.0.0-M2-3.3.0-SNAP3.jar",
             "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2.jar",
-            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3.0.0-M2/3.3.0-SNAP3/scalatest-core_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3.0.0-M2/3.3.0-SNAP3/scalatest-featurespec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3.0.0-M2/3.3.0-SNAP3/scalatest-flatspec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3.0.0-M2/3.3.0-SNAP3/scalatest-freespec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3.0.0-M2/3.3.0-SNAP3/scalatest-funsuite_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3.0.0-M2/3.3.0-SNAP3/scalatest-funspec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3.0.0-M2/3.3.0-SNAP3/scalatest-propspec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3.0.0-M2/3.3.0-SNAP3/scalatest-refspec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3.0.0-M2/3.3.0-SNAP3/scalatest-wordspec_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3.0.0-M2/3.3.0-SNAP3/scalatest-diagrams_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3.0.0-M2/3.3.0-SNAP3/scalatest-matchers-core_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-shouldmatchers_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-mustmatchers_3.0.0-M2-3.3.0-SNAP3.jar",
+            "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.3.0-SNAP3/scalatest-compatible-3.3.0-SNAP3.jar",
             "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"
         ],
         "out": "/home/till/Dokumente/AA Master Semester C/Moderne Programmiersprachen/Minesweeper/.bloop/minesweeper",
@@ -146,33 +145,23 @@
                             "name": "scala3-library_3.0.0-M2",
                             "classifier": "sources",
                             "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3.0.0-M2/3.0.0-M2/scala3-library_3.0.0-M2-3.0.0-M2-sources.jar"
-                        },
-                        {
-                            "name": "scala3-library_3.0.0-M2",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3.0.0-M2/3.0.0-M2/scala3-library_3.0.0-M2-3.0.0-M2-javadoc.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalactic",
-                    "name": "scalactic_2.13",
-                    "version": "3.2.2",
+                    "name": "scalactic_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalactic_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2.jar"
+                            "name": "scalactic_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3.0.0-M2/3.3.0-SNAP3/scalactic_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalactic_2.13",
+                            "name": "scalactic_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalactic_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_3.0.0-M2/3.3.0-SNAP3/scalactic_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
@@ -190,363 +179,261 @@
                             "name": "scala-library",
                             "classifier": "sources",
                             "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4-sources.jar"
-                        },
-                        {
-                            "name": "scala-library",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4-javadoc.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang",
-                    "name": "scala-reflect",
-                    "version": "2.13.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-reflect",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar"
-                        },
-                        {
-                            "name": "scala-reflect",
-                            "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3-sources.jar"
-                        },
-                        {
-                            "name": "scala-reflect",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3-javadoc.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2.jar"
+                            "name": "scalatest_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3.0.0-M2/3.3.0-SNAP3/scalatest_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest_2.13",
+                            "name": "scalatest_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_3.0.0-M2/3.3.0-SNAP3/scalatest_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-core_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-core_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-core_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2.jar"
+                            "name": "scalatest-core_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3.0.0-M2/3.3.0-SNAP3/scalatest-core_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-core_2.13",
+                            "name": "scalatest-core_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-core_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_3.0.0-M2/3.3.0-SNAP3/scalatest-core_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-featurespec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-featurespec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-featurespec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2.jar"
+                            "name": "scalatest-featurespec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3.0.0-M2/3.3.0-SNAP3/scalatest-featurespec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-featurespec_2.13",
+                            "name": "scalatest-featurespec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-featurespec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_3.0.0-M2/3.3.0-SNAP3/scalatest-featurespec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-flatspec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-flatspec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-flatspec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2.jar"
+                            "name": "scalatest-flatspec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3.0.0-M2/3.3.0-SNAP3/scalatest-flatspec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-flatspec_2.13",
+                            "name": "scalatest-flatspec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-flatspec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_3.0.0-M2/3.3.0-SNAP3/scalatest-flatspec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-freespec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-freespec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-freespec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2.jar"
+                            "name": "scalatest-freespec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3.0.0-M2/3.3.0-SNAP3/scalatest-freespec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-freespec_2.13",
+                            "name": "scalatest-freespec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-freespec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_3.0.0-M2/3.3.0-SNAP3/scalatest-freespec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-funsuite_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-funsuite_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-funsuite_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2.jar"
+                            "name": "scalatest-funsuite_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3.0.0-M2/3.3.0-SNAP3/scalatest-funsuite_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-funsuite_2.13",
+                            "name": "scalatest-funsuite_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-funsuite_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_3.0.0-M2/3.3.0-SNAP3/scalatest-funsuite_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-funspec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-funspec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-funspec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2.jar"
+                            "name": "scalatest-funspec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3.0.0-M2/3.3.0-SNAP3/scalatest-funspec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-funspec_2.13",
+                            "name": "scalatest-funspec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-funspec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_3.0.0-M2/3.3.0-SNAP3/scalatest-funspec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-propspec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-propspec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-propspec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2.jar"
+                            "name": "scalatest-propspec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3.0.0-M2/3.3.0-SNAP3/scalatest-propspec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-propspec_2.13",
+                            "name": "scalatest-propspec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-propspec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_3.0.0-M2/3.3.0-SNAP3/scalatest-propspec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-refspec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-refspec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-refspec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2.jar"
+                            "name": "scalatest-refspec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3.0.0-M2/3.3.0-SNAP3/scalatest-refspec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-refspec_2.13",
+                            "name": "scalatest-refspec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-refspec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_3.0.0-M2/3.3.0-SNAP3/scalatest-refspec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-wordspec_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-wordspec_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-wordspec_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2.jar"
+                            "name": "scalatest-wordspec_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3.0.0-M2/3.3.0-SNAP3/scalatest-wordspec_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-wordspec_2.13",
+                            "name": "scalatest-wordspec_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-wordspec_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_3.0.0-M2/3.3.0-SNAP3/scalatest-wordspec_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-diagrams_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-diagrams_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-diagrams_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2.jar"
+                            "name": "scalatest-diagrams_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3.0.0-M2/3.3.0-SNAP3/scalatest-diagrams_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-diagrams_2.13",
+                            "name": "scalatest-diagrams_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-diagrams_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_3.0.0-M2/3.3.0-SNAP3/scalatest-diagrams_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-matchers-core_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-matchers-core_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-matchers-core_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2.jar"
+                            "name": "scalatest-matchers-core_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3.0.0-M2/3.3.0-SNAP3/scalatest-matchers-core_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-matchers-core_2.13",
+                            "name": "scalatest-matchers-core_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-matchers-core_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_3.0.0-M2/3.3.0-SNAP3/scalatest-matchers-core_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-shouldmatchers_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-shouldmatchers_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-shouldmatchers_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2.jar"
+                            "name": "scalatest-shouldmatchers_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-shouldmatchers_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-shouldmatchers_2.13",
+                            "name": "scalatest-shouldmatchers_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-shouldmatchers_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-shouldmatchers_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
-                    "name": "scalatest-mustmatchers_2.13",
-                    "version": "3.2.2",
+                    "name": "scalatest-mustmatchers_3.0.0-M2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "scalatest-mustmatchers_2.13",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2.jar"
+                            "name": "scalatest-mustmatchers_3.0.0-M2",
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-mustmatchers_3.0.0-M2-3.3.0-SNAP3.jar"
                         },
                         {
-                            "name": "scalatest-mustmatchers_2.13",
+                            "name": "scalatest-mustmatchers_3.0.0-M2",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-mustmatchers_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_3.0.0-M2/3.3.0-SNAP3/scalatest-mustmatchers_3.0.0-M2-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "org.scalatest",
                     "name": "scalatest-compatible",
-                    "version": "3.2.2",
+                    "version": "3.3.0-SNAP3",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "scalatest-compatible",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.3.0-SNAP3/scalatest-compatible-3.3.0-SNAP3.jar"
                         },
                         {
                             "name": "scalatest-compatible",
                             "classifier": "sources",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2-sources.jar"
-                        },
-                        {
-                            "name": "scalatest-compatible",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2-javadoc.jar"
+                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.3.0-SNAP3/scalatest-compatible-3.3.0-SNAP3-sources.jar"
                         }
                     ]
                 },
@@ -564,11 +451,6 @@
                             "name": "scala-xml_2.13",
                             "classifier": "sources",
                             "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0-sources.jar"
-                        },
-                        {
-                            "name": "scala-xml_2.13",
-                            "classifier": "javadoc",
-                            "path": "/home/till/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0-javadoc.jar"
                         }
                     ]
                 }

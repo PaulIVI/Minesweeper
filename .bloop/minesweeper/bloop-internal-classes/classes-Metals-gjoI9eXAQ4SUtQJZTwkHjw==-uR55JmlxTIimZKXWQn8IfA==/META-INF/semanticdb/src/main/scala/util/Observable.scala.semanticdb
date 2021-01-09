@@ -1,45 +1,0 @@
-
-ö$src/main/scala/util/Observable.scala*$
-main/util/Observer#*Observer€*0
-main/util/Observer#`<init>`(). €@*<init>€*-
-main/util/Observer#update(). *update€*(
-main/util/Observable#*
-Observable€*2
- main/util/Observable#`<init>`(). €@*<init>€*:
-#main/util/Observable#subscribers(). €*subscribers€*@
-'main/util/Observable#`subscribers_=`(). €*subscribers_=€*8
-,main/util/Observable#`subscribers_=`().(x$1)*x$1€*'
-main/util/Observable#add().*add€*(
-main/util/Observable#add().(s)*s€*?
-'main/util/Observable#notifyObservers().*notifyObservers€*
-local0*o€2
- 
-main/util/2
- main/2!
- main/util/Observer#2,
- main/util/Observer#`<init>`().2*
- main/util/Observer#update().2
- scala/Boolean#2#
- main/util/Observable#2.
-  main/util/Observable#`<init>`().21
- #main/util/Observable#subscribers().2#
- scala/package.Vector#2!
- "main/util/Observer#27
-, ,)scala/collection/IterableFactory#apply().2#
-& ,scala/package.Vector.2)
-		 	main/util/Observable#add().2,
-	
-	 main/util/Observable#add().(s)2!
-		 main/util/Observer#2
-		 scala/Unit#25
-		 *'main/util/Observable#`subscribers_=`().2-
-	9	 ;scala/collection/SeqOps#`:+`().21
-	-	 8#main/util/Observable#subscribers().2,
-	<	 =main/util/Observable#add().(s)25
- 'main/util/Observable#notifyObservers().2
- scala/Unit#2:
-* 1,scala/collection/immutable/Vector#foreach().21
- )#main/util/Observable#subscribers().2
-2 3local02*
-9 ?main/util/Observer#update().2
-7 8local0PZ A3157027D5B4BE9E0DDC9DD146629C50

@@ -15,9 +15,9 @@ class MinesMapBase(difficulty: Int){
   val num_of_mines = mine_map.flatten.count(_ == 9)
 
   val index_of_mines =
-    for {i <- 0 until mine_map.length; j <- 0 until mine_map(i).length
+    for i <- 0 until mine_map.length; j <- 0 until mine_map(i).length
          if (mine_map(i)(j) == 9)
-         } yield (i, j)
+    yield (i, j)
 
   val minesweeper_map_incremented = incrementAroundAllMines(mine_map, index_of_mines, 0)
   val minesweeper_map = minesweeper_map_incremented.map(row => row.map(value => if(value>9)9 else value))

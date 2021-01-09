@@ -21,8 +21,6 @@ class MinesMapBase(difficulty: Int):
 
   val minesweeper_map_incremented = incrementAroundAllMines(mine_map, index_of_mines, 0)
   val minesweeper_map = minesweeper_map_incremented.map(row => row.map(value => if(value>9)9 else value))
-  
-  //minesweeper_map
 
   def incrementFieldsAroundSpecificMine(mine_map: Vector[Vector[Int]], coordiantes_to_increment: Vector[Tuple2[Int, Int]], current_cordinate_index: Int): Vector[Vector[Int]] = 
     if (current_cordinate_index >= coordiantes_to_increment.length) then mine_map

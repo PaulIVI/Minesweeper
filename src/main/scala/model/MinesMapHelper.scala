@@ -1,7 +1,7 @@
 package main.model
 
-class MinesMapHelper {
-  def transformLetterToColumnIndex(letter:Char) = {
+class MinesMapHelper:
+  def transformLetterToColumnIndex(letter:Char) = 
     val column_index = letter.toUpper match {
       case 'A' => 0
       case 'B' => 1
@@ -32,16 +32,14 @@ class MinesMapHelper {
       case _ => '-'
     }
     column_index
-  }
 
-  def getRolAndColIndex(letter:String, digit: String, mines_map_size: Int):(Int,Int)={
+  def getRolAndColIndex(letter:String, digit: String, mines_map_size: Int):(Int,Int)=
     val col_index = transformLetterToColumnIndex(letter(0).toChar)
     val row_index = digit.toInt
     if(row_index >= mines_map_size || col_index >= mines_map_size) (-1,-1)
     else (row_index, col_index)
-  }
 
-  def getCoordinatesAroundField(current_index: (Int, Int)):Vector[(Int, Int)] = {
+  def getCoordinatesAroundField(current_index: (Int, Int)):Vector[(Int, Int)] = 
     val coordinates_around_field = Vector(
       Tuple2(current_index._1 - 1, current_index._2 - 1),
       Tuple2(current_index._1 - 1, current_index._2),
@@ -52,5 +50,3 @@ class MinesMapHelper {
       Tuple2(current_index._1 + 1, current_index._2),
       Tuple2(current_index._1 + 1, current_index._2 + 1))
     coordinates_around_field
-  }
-}

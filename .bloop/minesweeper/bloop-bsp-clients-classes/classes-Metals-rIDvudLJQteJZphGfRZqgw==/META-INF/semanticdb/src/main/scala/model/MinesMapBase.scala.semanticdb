@@ -1,5 +1,5 @@
 
-çN'src/main/scala/model/MinesMapBase.scala*-
+†N'src/main/scala/model/MinesMapBase.scala*-
 main/model/MinesMapBase#*MinesMapBase€*5
 #main/model/MinesMapBase#`<init>`(). €@*<init>€*B
 /main/model/MinesMapBase#`<init>`().(difficulty)*
@@ -109,132 +109,129 @@ scala/Int#21
 G Llocal32 
 X Yscala/Int#`>`(+3).2
 S Xlocal32
-b glocal32'
- 	scala/Predef.println(+1).26
-
- (main/model/MinesMapBase#minesweeper_map.26
- (main/model/MinesMapBase#minesweeper_map.2J
- '<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2T
-( 0Fmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2#
-2 8scala/package.Vector#2#
-9 ?scala/package.Vector#2
-@ C
+b glocal326
+ (main/model/MinesMapBase#minesweeper_map.2J
+ '<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2T
+( 0Fmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2#
+2 8scala/package.Vector#2#
+9 ?scala/package.Vector#2
+@ C
 scala/Int#2d
-G _Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2#
-a gscala/package.Vector#2
-h nscala/Tuple2#2
-o r
+G _Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2#
+a gscala/package.Vector#2
+h nscala/Tuple2#2
+o r
 scala/Int#2
-t w
+t w
 scala/Int#2d
-	{ ’Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2
+	{ ’Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2
 
-” —
+” —
 scala/Int#2%
 
-š  scala/package.Vector#2%
+š  scala/package.Vector#2%
 
-¡ §scala/package.Vector#2
+¡ §scala/package.Vector#2
 
-¨ «
+¨ «
 scala/Int#2!
-  "scala/Int#`>=`(+3).2c
- Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)29
-< B+scala/collection/immutable/Vector#length().2d
-# ;Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2T
-I QFmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2
-
- local42@
-1 42scala/collection/StrictOptimizedIterableOps#map().2I
-$ 0;scala/collection/StrictOptimizedIterableOps#zipWithIndex().2T
- #Fmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2
- local52%
- scala/Tuple2.unapply().2
- local62
- local72@
-2 52scala/collection/StrictOptimizedIterableOps#map().2I
-% 1;scala/collection/StrictOptimizedIterableOps#zipWithIndex().2
-! $local62
- 
-  
+  "scala/Int#`>=`(+3).2c
+ Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)29
+< B+scala/collection/immutable/Vector#length().2d
+# ;Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2T
+I QFmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2
+
+ local42@
+1 42scala/collection/StrictOptimizedIterableOps#map().2I
+$ 0;scala/collection/StrictOptimizedIterableOps#zipWithIndex().2T
+ #Fmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(mine_map)2
+ local52%
+ scala/Tuple2.unapply().2
+ local62
+ local72@
+2 52scala/collection/StrictOptimizedIterableOps#map().2I
+% 1;scala/collection/StrictOptimizedIterableOps#zipWithIndex().2
+! $local62
+
+ 
 local82%
-   scala/Tuple2.unapply().2
-   local92
-   )local102#
-!R! Tscala/Boolean#`&&`().2!
-!! scala/Int#`==`(+3).2
-!! local72
-!O! Qscala/Tuple2#_1.2.
-!5! 5 scala/collection/SeqOps#apply().2d
-!! 5Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2c
-!6! MUmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2!
-!b! dscala/Int#`==`(+3).2
-!U! alocal102 
+ scala/Tuple2.unapply().2
+ local92
+ )local102#
+ R  Tscala/Boolean#`&&`().2!
+   scala/Int#`==`(+3).2
+   local72
+ O  Qscala/Tuple2#_1.2.
+ 5  5 scala/collection/SeqOps#apply().2d
+   5Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2c
+ 6  MUmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2!
+ b  dscala/Int#`==`(+3).2
+ U  alocal102 
 
-!—! ™scala/Tuple2#_2.2.
-!}! } scala/collection/SeqOps#apply().2d
-!e! }Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2d
-	!~! •Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2"
+ —  ™scala/Tuple2#_2.2.
+ }  } scala/collection/SeqOps#apply().2d
+ e  }Vmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2d
+	 ~  •Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2"
 
-!§! ¨scala/Int#`+`(+4).2
+ §  ¨scala/Int#`+`(+4).2
 
-!›! ¦local92
-"" local92
-%
-% local112J
-%% <<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2
-%=% Klocal42d
-%M% eVmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2!
-	%% €scala/Int#`+`(+4).2c
-%g% ~Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2
-&& local112@
-)) 2main/model/MinesMapBase#incrementAroundAllMines().2J
-)) &<main/model/MinesMapBase#incrementAroundAllMines().(mine_map)2#
-)() .scala/package.Vector#2#
-)/) 5scala/package.Vector#2
-)6) 9
+ ›  ¦local92
+!! local92
+$
+$ local112J
+$$ <<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2
+$=$ Klocal42d
+$M$ eVmain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(coordiantes_to_increment)2!
+	$$ €scala/Int#`+`(+4).2c
+$g$ ~Umain/model/MinesMapBase#incrementFieldsAroundSpecificMine().(current_cordinate_index)2
+%% local112@
+'' 2main/model/MinesMapBase#incrementAroundAllMines().2J
+'' &<main/model/MinesMapBase#incrementAroundAllMines().(mine_map)2#
+'(' .scala/package.Vector#2#
+'/' 5scala/package.Vector#2
+'6' 9
 scala/Int#2P
-)=) KBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2'
-)M) Wscala/package.IndexedSeq#2
-)Y) \
+'=' KBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2'
+'M' Wscala/package.IndexedSeq#2
+'Y' \
 scala/Int#2
-)^) a
+'^' a
 scala/Int#2T
-)e) wFmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
-)y) |
+'e' wFmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
+'y' |
 scala/Int#2$
-	)) …scala/package.Vector#2%
+	'' …scala/package.Vector#2%
 
-)†) Œscala/package.Vector#2
+'†' Œscala/package.Vector#2
 
-)) 
+'' 
 scala/Int#2
-** local1223
-*#* #%main/model/MinesMapHelper#`<init>`().2(
-** #main/model/MinesMapHelper#2 
-++ scala/Int#`<`(+3).2T
-++ Fmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2/
-+,+ 2!scala/collection/SeqOps#length().2P
-++ +Bmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2
+(( local1223
+(#( #%main/model/MinesMapHelper#`<init>`().2(
+(( #main/model/MinesMapHelper#2 
+)) scala/Int#`<`(+3).2T
+)) Fmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2/
+),) 2!scala/collection/SeqOps#length().2P
+)) +Bmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2
+*
+* "local132D
+*,* E6main/model/MinesMapHelper#getCoordinatesAroundField().2
+*%* +local122.
+*T* T scala/collection/SeqOps#apply().2P
+*F* TBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2T
+*U* gFmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
++
++ %local142J
++(+ I<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2J
++J+ R<main/model/MinesMapBase#incrementAroundAllMines().(mine_map)2
++T+ llocal132
 ,
-, "local132D
-,,, E6main/model/MinesMapHelper#getCoordinatesAroundField().2
-,%, +local122.
-,T, T scala/collection/SeqOps#apply().2P
-,F, TBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2T
-,U, gFmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
--
-- %local142J
--(- I<main/model/MinesMapBase#incrementFieldsAroundSpecificMine().2J
--J- R<main/model/MinesMapBase#incrementAroundAllMines().(mine_map)2
--T- llocal132
-.
-. (local152@
-.+. B2main/model/MinesMapBase#incrementAroundAllMines().2
-.C. ^local142P
-.`. nBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2"
+, (local152@
+,+, B2main/model/MinesMapBase#incrementAroundAllMines().2
+,C, ^local142P
+,`, nBmain/model/MinesMapBase#incrementAroundAllMines().(index_of_mines)2"
 
-.ƒ. „scala/Int#`+`(+4).2U
-	.p. ‚Fmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
-// $local152J
-11 <main/model/MinesMapBase#incrementAroundAllMines().(mine_map)PZ 078F67FE946F22A3B3403A1D0E79BD1A
+,ƒ, „scala/Int#`+`(+4).2U
+	,p, ‚Fmain/model/MinesMapBase#incrementAroundAllMines().(current_mine_index)2
+-- $local152J
+// <main/model/MinesMapBase#incrementAroundAllMines().(mine_map)PZ 4A5EFF7ABC7FA1074F2AAE8FE0DADF94

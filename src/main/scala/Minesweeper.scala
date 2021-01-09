@@ -5,12 +5,12 @@ import main.view.Tui
 
 import scala.io.StdIn.readLine
 
-object Minesweeper {
+object Minesweeper:
   val controller = new Controller(new MinesMap(10))
   val tui = new Tui(controller)
   controller.notifyObservers
 
-  def main(args: Array[String]): Unit = {
+  @main def main() =
     var input: String = ""
     if (!input.isEmpty) then tui.processInputLine(input)
     else
@@ -19,5 +19,4 @@ object Minesweeper {
       do
         input = readLine()
         tui.processInputLine(input)
-  }
-}
+

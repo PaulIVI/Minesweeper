@@ -1,86 +1,0 @@
-
-·*src/main/scala/controller/Controller.scala*.
-main/controller/Controller#*
-Controller€*8
-&main/controller/Controller#`<init>`(). €@*<init>€*F
-1main/controller/Controller#`<init>`().(mines_map) €*	mines_map€*<
-'main/controller/Controller#mines_map(). €*	mines_map€*B
-+main/controller/Controller#`mines_map_=`(). €*mines_map_=€*<
-0main/controller/Controller#`mines_map_=`().(x$1)*x$1€*D
-*main/controller/Controller#mines_map_base. €*mines_map_base€*9
-'main/controller/Controller#openField().*	openField€*R
-9main/controller/Controller#openField().(field_coordinate)*field_coordinate€*9
-'main/controller/Controller#placeFlag().*	placeFlag€*R
-9main/controller/Controller#placeFlag().(field_coordinate)*field_coordinate€*9
-'main/controller/Controller#placeNote().*	placeNote€*R
-9main/controller/Controller#placeNote().(field_coordinate)*field_coordinate€*1
-#main/controller/Controller#solve().*solve€*E
--main/controller/Controller#gameMapToString().*gameMapToString€2
- main/controller/2
- main/2"
- main/model/MinesMap.2"
- main/model/MinesMap#2&
- )main/model/MinesMapBase.2
- main/model/2
- main/2#
- main/util/Observable.2
- 
-main/util/2
- main/2)
- main/controller/Controller#24
- &main/controller/Controller#`<init>`().2"
- 'main/model/MinesMap#2.
-; ; main/util/Observable#`<init>`().2#
-1 ;main/util/Observable#25
- 'main/controller/Controller#mines_map().28
- *main/controller/Controller#mines_map_base.21
-' '#main/model/MinesMapBase#`<init>`().2&
- 'main/model/MinesMapBase#25
- 'main/controller/Controller#openField().2G
-  9main/controller/Controller#openField().(field_coordinate)2
-" %
-scala/Int#2
-' *
-scala/Int#29
-		 +main/controller/Controller#`mines_map_=`().2.
-		 # main/model/MinesMap#openField().25
-		 'main/controller/Controller#mines_map().2G
-	$	 49main/controller/Controller#openField().(field_coordinate)26
-	E	 T(main/model/MinesMapBase#minesweeper_map.28
-	6	 D*main/controller/Controller#mines_map_base.25
-
-
- 'main/util/Observable#notifyObservers().25
- 'main/controller/Controller#placeFlag().2G
-  9main/controller/Controller#placeFlag().(field_coordinate)2
-" %
-scala/Int#2
-' *
-scala/Int#29
- +main/controller/Controller#`mines_map_=`().2.
- # main/model/MinesMap#placeFlag().25
- 'main/controller/Controller#mines_map().2G
-$ 49main/controller/Controller#placeFlag().(field_coordinate)25
- 'main/util/Observable#notifyObservers().25
- 'main/controller/Controller#placeNote().2G
-  9main/controller/Controller#placeNote().(field_coordinate)2
-" %
-scala/Int#2
-' *
-scala/Int#29
- +main/controller/Controller#`mines_map_=`().2.
- # main/model/MinesMap#placeNote().25
- 'main/controller/Controller#mines_map().2G
-$ 49main/controller/Controller#placeNote().(field_coordinate)25
- 'main/util/Observable#notifyObservers().21
- #main/controller/Controller#solve().29
- +main/controller/Controller#`mines_map_=`().2*
- main/model/MinesMap#solve().25
- 'main/controller/Controller#mines_map().28
-  .*main/controller/Controller#mines_map_base.25
- 'main/util/Observable#notifyObservers().2;
- -main/controller/Controller#gameMapToString().2"
- scala/Predef.String#25
-* :'main/model/MinesMap#minesMapToString().25
-  )'main/controller/Controller#mines_map().28
-; I*main/controller/Controller#mines_map_base.PZ 4B44B1BA4ACEAEDCEB8E3684E1A8DCD7

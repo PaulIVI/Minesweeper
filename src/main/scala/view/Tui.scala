@@ -8,7 +8,7 @@ class Tui(controller: Controller) extends Observer{
 
   controller.add(this)
 
-  def processInputLine(input: String):Unit = {
+  def processInputLine(input: String):Unit = 
     val input_without_spaces = input.replaceAll("\\s", "").toLowerCase()
     val col_and_row_index = getRowAndColIndex(input_without_spaces.substring(1))
 
@@ -22,22 +22,23 @@ class Tui(controller: Controller) extends Observer{
       case 's' => controller.solve()
       case _ => println(wrong_input_string)
     }
-  }
 
-  def getRowAndColIndex(input:String): (Int,Int) ={
+  def getRowAndColIndex(input:String): (Int,Int) =
     val mines_map_helper = new MinesMapHelper
     val split_digits_letter = input.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)")
     if(isInputCorrect(split_digits_letter)) then mines_map_helper.getRolAndColIndex(split_digits_letter(0), split_digits_letter(1), controller.mines_map_base.minesweeper_map(0).length)
     else (-1,-1)
-  }
-  def isInputCorrect(split_digits_letter:Array[String]): Boolean ={
+  
+  def isInputCorrect(split_digits_letter:Array[String]): Boolean =
     if(split_digits_letter.length == 2 &&
       split_digits_letter(0).length == 1 &&
       split_digits_letter(1).forall(_.isDigit) &&
       split_digits_letter(1).length < 3) true
     else false
-  }
+  
 
-  override def update: Boolean = { println(controller.gameMapToString);true}
+  override def update: Boolean = 
+    println(controller.gameMapToString);
+    true
 
 }

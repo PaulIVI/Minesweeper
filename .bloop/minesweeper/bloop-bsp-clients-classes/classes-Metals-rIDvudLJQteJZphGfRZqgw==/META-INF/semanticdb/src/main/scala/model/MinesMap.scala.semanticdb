@@ -610,188 +610,188 @@ scala/Int#20
 ÅQÅ xMmain/model/MinesMap#checkForZeros().(already_collected_but_not_checked_zeros)2E
 ÅzÅ à4main/model/MinesMap#checkForZeros().(mines_map_base)2<
 
-ÑÑ ,main/model/MinesMap#getEveryConnectedZero().2U
+ÉÉ ,main/model/MinesMap#getEveryConnectedZero().2U
 
-ÑÑ 3Emain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2%
+ÉÉ 3Emain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2%
 
-Ñ5Ñ ;scala/package.Vector#2
+É5É ;scala/package.Vector#2
 
-Ñ=Ñ @
+É=É @
 scala/Int#2
 
-ÑBÑ E
+ÉBÉ E
 scala/Int#2e
 
-ÑIÑ pUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2%
+ÉIÉ pUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2%
 
-ÑrÑ xscala/package.Vector#2
+ÉrÉ xscala/package.Vector#2
 
-ÑzÑ }
+ÉzÉ }
 scala/Int#2
-ÑÑ Ç
+ÉÉ Ç
 scala/Int#2N
-ÑÜÑ î<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2'
-ÑñÑ úscala/package.Vector#2'
-ÑùÑ £scala/package.Vector#2
-Ñ§Ñ ß
+ÉÜÉ î<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2'
+ÉñÉ úscala/package.Vector#2'
+ÉùÉ £scala/package.Vector#2
+É§É ß
 scala/Int#2'
-Ñ¨Ñ ≤scala/package.Vector#2
-Ñ¥Ñ ∑
+É¨É ≤scala/package.Vector#2
+É¥É ∑
 scala/Int#2
-ÑπÑ º
+ÉπÉ º
 scala/Int#22
 
-Ö0Ö 7"scala/collection/SeqOps#isEmpty().2e
+Ñ0Ñ 7"scala/collection/SeqOps#isEmpty().2e
 
-ÖÖ /Umain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2U
+ÑÑ /Umain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2U
 
-ÜÜ Emain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2
+ÖÖ Emain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2
+
+á
+á "local162F
+
+á,á E6main/model/MinesMapHelper#getCoordinatesAroundField().2+
+
+á%á +main/model/MinesMap#helper.20
+
+ámá m scala/collection/SeqOps#apply().2e
+
+áFá mUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2
 
 à
-à "local162F
+à /local1724
 
-à,à E6main/model/MinesMapHelper#getCoordinatesAroundField().2+
+à2à ?$main/model/MinesMap#checkForZeros().2
 
-à%à +main/model/MinesMap#helper.20
+à@à Xlocal162U
 
-àmà m scala/collection/SeqOps#apply().2e
+àZà qEmain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2f
+àsà öUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2N
+àúà ™<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2<
 
-àFà mUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2
+ââ ,main/model/MinesMap#getEveryConnectedZero().2 
 
-â
-â /local1724
+âBâ Dscala/Tuple2#_1.2
 
-â2â ?$main/model/MinesMap#checkForZeros().2
+ââ Alocal1729
 
-â@â Xlocal162U
+âoâ s)scala/collection/immutable/Vector#drop().2 
 
-âZâ qEmain/model/MinesMap#getEveryConnectedZero().(already_collected_zeros)2f
-âsâ öUmain/model/MinesMap#getEveryConnectedZero().(already_collected_but_not_checked_zeros)2N
-âúâ ™<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2<
+âlâ nscala/Tuple2#_2.2
 
-ää ,main/model/MinesMap#getEveryConnectedZero().2 
+âFâ klocal172M
+âxâ Ü<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2:
 
-äBä Dscala/Tuple2#_1.2
+ãã *main/model/MinesMap#getFieldsAroundZero().2P
 
-ää Alocal1729
+ãã .@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)2%
 
-äoä s)scala/collection/immutable/Vector#drop().2 
+ã0ã 6scala/package.Vector#2
 
-älä nscala/Tuple2#_2.2
-
-äFä klocal172M
-äxä Ü<main/model/MinesMap#getEveryConnectedZero().(mines_map_base)2:
-
-çç *main/model/MinesMap#getFieldsAroundZero().2P
-
-çç .@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)2%
-
-ç0ç 6scala/package.Vector#2
-
-ç8ç ;
+ã8ã ;
 scala/Int#2
 
-ç=ç @
+ã=ã @
 scala/Int#2J
 
-çDç R:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2%
+ãDã R:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2%
 
-çTç Zscala/package.Vector#2
+ãTã Zscala/package.Vector#2
 
-ç\ç _
+ã\ã _
 scala/Int#2
 
-çaç d
+ãaã d
 scala/Int#2%
 
-çiç oscala/package.Vector#2
+ãiã oscala/package.Vector#2
 
-çqç t
+ãqã t
 scala/Int#2
 
-çvç y
+ãvã y
 scala/Int#22
 
-éé $"scala/collection/SeqOps#isEmpty().2P
+åå $"scala/collection/SeqOps#isEmpty().2P
 
-éé @main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)23
+åå @main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)23
 
-é:é B#scala/collection/SeqOps#distinct().2J
+å:å B#scala/collection/SeqOps#distinct().2J
 
-é+é 9:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2
+å+å 9:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2
 
-ê
-ê "local182F
+é
+é "local182F
 
-ê,ê E6main/model/MinesMapHelper#getCoordinatesAroundField().2+
+é,é E6main/model/MinesMapHelper#getCoordinatesAroundField().2+
 
-ê%ê +main/model/MinesMap#helper.20
+é%é +main/model/MinesMap#helper.20
 
-êZê Z scala/collection/SeqOps#apply().2P
+éZé Z scala/collection/SeqOps#apply().2P
 
-êFê Z@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)2:
+éFé Z@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)2:
 
-ëë *main/model/MinesMap#getFieldsAroundZero().29
+èè *main/model/MinesMap#getFieldsAroundZero().29
 
-ë/ë 3)scala/collection/immutable/Vector#drop().2P
+è/è 3)scala/collection/immutable/Vector#drop().2P
 
-ëë .@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)24
+èè .@main/model/MinesMap#getFieldsAroundZero().(every_connected_zero)24
 
-ëGë I$scala/collection/IterableOps#`++`().2J
+èGè I$scala/collection/IterableOps#`++`().2J
 
-ë8ë F:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2
+è8è F:main/model/MinesMap#getFieldsAroundZero().(fields_to_open)2
 
-ëJë blocal182>
+èJè blocal182>
 
-îî .main/model/MinesMap#getFieldsToOpenBecause0().2Q
+íí .main/model/MinesMap#getFieldsToOpenBecause0().2Q
 
-îî /Amain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)2
+íí /Amain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)2
 
-î2î 5
+í2í 5
 scala/Int#2
 
-î7î :
+í7í :
 scala/Int#2N
 
-î=î K>main/model/MinesMap#getFieldsToOpenBecause0().(mines_map_base)2%
+í=í K>main/model/MinesMap#getFieldsToOpenBecause0().(mines_map_base)2%
 
-îMî Sscala/package.Vector#2%
+íMí Sscala/package.Vector#2%
 
-îTî Zscala/package.Vector#2
+íTí Zscala/package.Vector#2
 
-î[î ^
+í[í ^
 scala/Int#2
 
-ïï local192<
+ìì local192<
 
-ïï 4,main/model/MinesMap#getEveryConnectedZero().29
+ìì 4,main/model/MinesMap#getEveryConnectedZero().29
 
-ï;ï ;)scala/collection/IterableFactory#apply().2%
+ì;ì ;)scala/collection/IterableFactory#apply().2%
 
-ï5ï ;scala/package.Vector.2Q
+ì5ì ;scala/package.Vector.2Q
 
-ï<ï MAmain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)29
+ì<ì MAmain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)29
 
-ïVï V)scala/collection/IterableFactory#apply().2%
+ìVì V)scala/collection/IterableFactory#apply().2%
 
-ïPï Vscala/package.Vector.2Q
+ìPì Vscala/package.Vector.2Q
 
-ïWï hAmain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)2N
+ìWì hAmain/model/MinesMap#getFieldsToOpenBecause0().(row_and_col_index)2N
 
-ïkï y>main/model/MinesMap#getFieldsToOpenBecause0().(mines_map_base)2
+ìkì y>main/model/MinesMap#getFieldsToOpenBecause0().(mines_map_base)2
 
-ññ local202:
+îî local202:
 
-ññ ,*main/model/MinesMap#getFieldsAroundZero().2
+îî ,*main/model/MinesMap#getFieldsAroundZero().2
 
-ñ-ñ Alocal1929
+î-î Alocal1929
 
-ñIñ I)scala/collection/IterableFactory#apply().2%
+îIî I)scala/collection/IterableFactory#apply().2%
 
-ñCñ Iscala/package.Vector.20
+îCî Iscala/package.Vector.20
 
-ñ^ñ ^ scala/collection/SeqOps#apply().2
+î^î ^ scala/collection/SeqOps#apply().2
 
-ñJñ ^local192
+îJî ^local192
 
-óó local20PZ 8E6CF525EA84EB670BB6FCA64982D88E
+ïï local20PZ 05AE8D1B5001E456A55A7D670FC622A1

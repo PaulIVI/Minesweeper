@@ -1,5 +1,5 @@
 
-©B)src/main/scala/model/MinesMapString.scala*1
+ëC)src/main/scala/model/MinesMapString.scala*1
 main/model/MinesMapString#*MinesMapStringÄ*7
 %main/model/MinesMapString#`<init>`(). Ä@*<init>Ä*D
 ,main/model/MinesMapString#gameMapToString().*gameMapToStringÄ*G
@@ -141,9 +141,10 @@ scala/Int#2#
 	{ Åscala/Predef.String#2
  local112!
 # %scala/Int#`==`(+3).2Q
- "Cmain/model/MinesMapString#addVectorElementToString().(column_index)2
-3 4scala/Int#`+`().2N
-) 2@main/model/MinesMapString#addVectorElementToString().(row_index)2
+ "Cmain/model/MinesMapString#addVectorElementToString().(column_index)2&
+8 9scala/StringContext#s().2*
++ +scala/StringContext.apply().2N
+- 6@main/model/MinesMapString#addVectorElementToString().(row_index)2
  local122%
  java/lang/String#`+`().2
  local112<
@@ -162,46 +163,47 @@ scala/Int#2#
 3 :local122
 G Nlocal122
  local132;
- -main/model/MinesMapString#generateFirstRow().2E
- 7main/model/MinesMapString#generateFirstRow().(game_map)2#
-  &scala/package.Vector#2#
-' -scala/package.Vector#2
-. 1
+ -main/model/MinesMapString#generateFirstRow().2E
+ 7main/model/MinesMapString#generateFirstRow().(game_map)2#
+  &scala/package.Vector#2#
+' -scala/package.Vector#2
+. 1
 scala/Int#2"
-6 <scala/Predef.String#2
- local1427
- )scala/collection/IterableFactory#apply().2#
- scala/package.Vector.2
- local152?
-! &1scala/collection/immutable/IndexedSeqOps#slice().2
-  local1429
-3 9+scala/collection/immutable/Vector#length().2E
-* 27main/model/MinesMapString#generateFirstRow().(game_map)2
- local162%
-< =java/lang/String#`+`().2%
- java/lang/String#`+`().2<
-. 6.scala/collection/IterableOnceOps#mkString(+1).2
- -local152
- local162<
- .main/model/MinesMapString#returnVisibleChar().2C
- 5main/model/MinesMapString#returnVisibleChar().(value)2
- !
+6 <scala/Predef.String#2
+ local1427
+ )scala/collection/IterableFactory#apply().2#
+ scala/package.Vector.2
+ local152?
+! &1scala/collection/immutable/IndexedSeqOps#slice().2
+  local1429
+3 9+scala/collection/immutable/Vector#length().2E
+* 27main/model/MinesMapString#generateFirstRow().(game_map)2
+ local162%
+< =java/lang/String#`+`().2%
+ java/lang/String#`+`().2<
+. 6.scala/collection/IterableOnceOps#mkString(+1).2
+ -local152
+ local162<
+ .main/model/MinesMapString#returnVisibleChar().2C
+ 5main/model/MinesMapString#returnVisibleChar().(value)2
+ !
 scala/Int#2G
-# ,9main/model/MinesMapString#returnVisibleChar().(row_index)2
-- 0
+# ,9main/model/MinesMapString#returnVisibleChar().(row_index)2
+- 0
 scala/Int#2J
-2 ><main/model/MinesMapString#returnVisibleChar().(column_index)2
-? B
+2 ><main/model/MinesMapString#returnVisibleChar().(column_index)2
+? B
 scala/Int#2F
-D L8main/model/MinesMapString#returnVisibleChar().(game_map)2#
-M Sscala/package.Vector#2#
-T Zscala/package.Vector#2
-[ ^
+D L8main/model/MinesMapString#returnVisibleChar().(game_map)2#
+M Sscala/package.Vector#2#
+T Zscala/package.Vector#2
+[ ^
 scala/Int#2C
- 	5main/model/MinesMapString#returnVisibleChar().(value)2
- 2  3scala/Int#`+`().2.
- #  # scala/collection/SeqOps#apply().2.
-    scala/collection/SeqOps#apply().2F
-   8main/model/MinesMapString#returnVisibleChar().(game_map)2G
-   "9main/model/MinesMapString#returnVisibleChar().(row_index)2J
- $  0<main/model/MinesMapString#returnVisibleChar().(column_index)PZ D80D7F84A78B1725E2976C19535FB063
+ 	5main/model/MinesMapString#returnVisibleChar().(value)2&
+!7! 8scala/StringContext#s().2*
+!! scala/StringContext.apply().2.
+!'! ' scala/collection/SeqOps#apply().2.
+!!  scala/collection/SeqOps#apply().2F
+!! 8main/model/MinesMapString#returnVisibleChar().(game_map)2G
+!! &9main/model/MinesMapString#returnVisibleChar().(row_index)2J
+!(! 4<main/model/MinesMapString#returnVisibleChar().(column_index)PZ 55D435B035845FC05D37F3EA92AE6533

@@ -10,7 +10,7 @@ object Minesweeper:
   val tui = new Tui(controller)
   controller.notifyObservers
 
-  @main def main() =
+  @main def MinesweeperMain() =
     var input: String = ""
     if (!input.isEmpty) then tui.processInputLine(input)
     else

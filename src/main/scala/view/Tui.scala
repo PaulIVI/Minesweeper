@@ -4,11 +4,11 @@ import main.controller.Controller
 import main.model.MinesMapHelper
 import main.util.Observer
 
-class Tui(controller: Controller) extends Observer{
+class Tui(controller: Controller) extends Observer:
 
   controller.add(this)
 
-  def processInputLine(input: String):Unit = 
+  def processInputLine(input: String):Unit =
     val input_without_spaces = input.replaceAll("\\s", "").toLowerCase()
     val col_and_row_index = getRowAndColIndex(input_without_spaces.substring(1))
 
@@ -40,5 +40,3 @@ class Tui(controller: Controller) extends Observer{
   override def update: Boolean = 
     println(controller.gameMapToString);
     true
-
-}

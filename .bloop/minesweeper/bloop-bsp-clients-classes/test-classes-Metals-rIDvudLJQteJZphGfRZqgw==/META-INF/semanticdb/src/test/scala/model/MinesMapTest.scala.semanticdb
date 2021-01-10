@@ -1,162 +1,0 @@
-
-ø6'src/test/scala/model/MinesMapTest.scala*.
-scala/model/MinesMapTest#*MinesMapTest€*6
-$scala/model/MinesMapTest#`<init>`(). €@*<init>€*F
-*scala/model/MinesMapTest#example_game_map. €*example_game_map€*V
-2scala/model/MinesMapTest#example_current_game_map. €*example_current_game_map€*8
-#scala/model/MinesMapTest#mines_map. €*	mines_map€*)
-local0 €*already_collected_zeros€*9
-local1 €*'already_collected_zeros_but_not_checked€*(
-local2 €*return_value_should_be€*!
-local3 €*opend_mines_map€*
-local4*n€*
-local5*m€*!
-local6 €*opend_mines_map€2
- scala/model/2
- scala/2"
- main/model/MinesMap.2"
- main/model/MinesMap#2&
- )main/model/MinesMapBase.2
- main/model/2
- main/25
-% -'org/scalatest/matchers/should/Matchers.25
-% -'org/scalatest/matchers/should/Matchers#2,
- $org/scalatest/matchers/should/2%
- org/scalatest/matchers/2
- org/scalatest/2
- 
-org/21
- )#org/scalatest/wordspec/AnyWordSpec.2%
- org/scalatest/wordspec/2
- org/scalatest/2
- 
-org/2'
- scala/model/MinesMapTest#22
- $scala/model/MinesMapTest#`<init>`().2<
-& &.org/scalatest/wordspec/AnyWordSpec#`<init>`().21
- &#org/scalatest/wordspec/AnyWordSpec#25
-, 4'org/scalatest/matchers/should/Matchers#28
- *scala/model/MinesMapTest#example_game_map.27
- )scala/collection/IterableFactory#apply().2#
- scala/package.Vector.27
-& &)scala/collection/IterableFactory#apply().2#
-  &scala/package.Vector.27
-6 6)scala/collection/IterableFactory#apply().2#
-0 6scala/package.Vector.27
-F F)scala/collection/IterableFactory#apply().2#
-@ Fscala/package.Vector.27
-V V)scala/collection/IterableFactory#apply().2#
-P Vscala/package.Vector.2@
- 2scala/model/MinesMapTest#example_current_game_map.27
-' ')scala/collection/IterableFactory#apply().2#
-! 'scala/package.Vector.27
-. .)scala/collection/IterableFactory#apply().2#
-( .scala/package.Vector.27
-> >)scala/collection/IterableFactory#apply().2#
-8 >scala/package.Vector.27
-N N)scala/collection/IterableFactory#apply().2#
-H Nscala/package.Vector.27
-^ ^)scala/collection/IterableFactory#apply().2#
-X ^scala/package.Vector.21
-
-
- #scala/model/MinesMapTest#mines_map.2-
-
-
- main/model/MinesMap#`<init>`().2"
-
-
- main/model/MinesMap#2@
-
-
- 72scala/model/MinesMapTest#example_current_game_map.2S
-' -Eorg/scalatest/verbs/ShouldVerb#StringShouldWrapperForVerb#should(+2).2T
- Forg/scalatest/matchers/should/Matchers#convertToStringShouldWrapper().23
-& &%org/scalactic/source/Position.here().2/
-& &!org/scalactic/Prettifier.default.2P
-D FBorg/scalatest/wordspec/AnyWordSpecLike#WordSpecStringWrapper#in().2V
- Horg/scalatest/wordspec/AnyWordSpecLike#convertToWordSpecStringWrapper().2
-
- !local027
-* *)scala/collection/IterableFactory#apply().2#
-$ *scala/package.Vector.2#
-, ,scala/Tuple2.apply().2
-
- 1local127
-: :)scala/collection/IterableFactory#apply().2#
-4 :scala/package.Vector.2#
-< <scala/Tuple2.apply().2
-
-  local227
-) ))scala/collection/IterableFactory#apply().2#
-# )scala/package.Vector.2#
-+ +scala/Tuple2.apply().2#
-1 1scala/Tuple2.apply().2#
-7 7scala/Tuple2.apply().2#
-= =scala/Tuple2.apply().2#
-C Cscala/Tuple2.apply().2P
-	z €Aorg/scalatest/matchers/should/Matchers#AnyShouldWrapper#should().2Q
- Corg/scalatest/matchers/should/Matchers#convertToAnyShouldWrapper().2:
- %,main/model/MinesMap#getEveryConnectedZero().21
- #scala/model/MinesMapTest#mines_map.2
-& =local02
-? flocal128
-h x*scala/model/MinesMapTest#example_game_map.23
-y y%org/scalactic/source/Position.here().2/
-y y!org/scalactic/Prettifier.default.2<
-
-ƒ ƒ,org/scalatest/matchers/dsl/BeWord#apply(+6).2;
-
- ƒ+org/scalatest/matchers/dsl/MatcherWords#be.2
-
-„ šlocal223
- %org/scalactic/source/Position.here().2Q
- Corg/scalatest/wordspec/AnyWordSpecLike#subjectRegistrationFunction.2S
- !Eorg/scalatest/verbs/ShouldVerb#StringShouldWrapperForVerb#should(+2).2T
- Forg/scalatest/matchers/should/Matchers#convertToStringShouldWrapper().23
- %org/scalactic/source/Position.here().2/
- !org/scalactic/Prettifier.default.2P
-4 6Borg/scalatest/wordspec/AnyWordSpecLike#WordSpecStringWrapper#in().2V
- Horg/scalatest/wordspec/AnyWordSpecLike#convertToWordSpecStringWrapper().2
-
- local32.
-& / main/model/MinesMap#openField().21
- %#scala/model/MinesMapTest#mines_map.2#
-1 1scala/Tuple2.apply().28
-7 G*scala/model/MinesMapTest#example_game_map.2@
-  #2scala/collection/StrictOptimizedIterableOps#map().2,
- main/model/MinesMap#situation.2
- local32
-$ %local42@
-+ .2scala/collection/StrictOptimizedIterableOps#map().2
-) *local42
-/ 0local52O
-
- Aorg/scalatest/matchers/should/Matchers#AnyShouldWrapper#should().2Q
- Corg/scalatest/matchers/should/Matchers#convertToAnyShouldWrapper().2
- 	local523
-	 	%org/scalactic/source/Position.here().2/
-	 	!org/scalactic/Prettifier.default.2:
- ,org/scalatest/matchers/dsl/BeWord#apply(+6).29
- +org/scalatest/matchers/dsl/MatcherWords#be.23
- %org/scalactic/source/Position.here().2P
-4 6Borg/scalatest/wordspec/AnyWordSpecLike#WordSpecStringWrapper#in().2V
- Horg/scalatest/wordspec/AnyWordSpecLike#convertToWordSpecStringWrapper().2
-
- local62.
-& / main/model/MinesMap#openField().21
- %#scala/model/MinesMapTest#mines_map.2#
-1 1scala/Tuple2.apply().28
-7 G*scala/model/MinesMapTest#example_game_map.2O
-& ,Aorg/scalatest/matchers/should/Matchers#AnyShouldWrapper#should().2Q
- Corg/scalatest/matchers/should/Matchers#convertToAnyShouldWrapper().2.
-" " scala/collection/SeqOps#apply().2.
-  scala/collection/SeqOps#apply().2,
- main/model/MinesMap#situation.2
- local623
-% %%org/scalactic/source/Position.here().2/
-% %!org/scalactic/Prettifier.default.2:
-/ /,org/scalatest/matchers/dsl/BeWord#apply(+6).29
-- /+org/scalatest/matchers/dsl/MatcherWords#be.23
- %org/scalactic/source/Position.here().2Q
-   Corg/scalatest/wordspec/AnyWordSpecLike#subjectRegistrationFunction.PZ AEADCE1D7465C17265CB1E0615C8B108

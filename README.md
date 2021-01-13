@@ -10,5 +10,5 @@ Für die meisten Abgaben wurde ein extra Branch angelegt. Auf welchem Branch die
 In Scala entwickeltes Minesweeper Spiel für die Konsole. 
 
 ## Branches 
-- main: Abgaben 1 bis 4
-- scala_3: Abgabe 11
+- main: Abgaben 1 bis 4 (https://github.com/PaulIVI/Minesweeper/tree/main)
+- scala_3: Abgabe 11 (https://github.com/PaulIVI/Minesweeper/tree/scala_3)

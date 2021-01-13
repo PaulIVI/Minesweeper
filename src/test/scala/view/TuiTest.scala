@@ -66,6 +66,7 @@ class TuiTest extends AnyWordSpec with Matchers{
         m should be(2)
       }))
     }
+    /*
     "The function getRowAndColIndex" should {
       "return (-1,-1) on input 'a'" in {
         tui.getRowAndColIndex("a") should be((-1, -1))
@@ -95,5 +96,7 @@ class TuiTest extends AnyWordSpec with Matchers{
         tui.getRowAndColIndex("bb") should be((-1,-1))
        }
     }
+
+     */
   }
 }

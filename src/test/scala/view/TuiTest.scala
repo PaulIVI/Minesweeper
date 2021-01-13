@@ -66,37 +66,5 @@ class TuiTest extends AnyWordSpec with Matchers{
         m should be(2)
       }))
     }
-    /*
-    "The function getRowAndColIndex" should {
-      "return (-1,-1) on input 'a'" in {
-        tui.getRowAndColIndex("a") should be((-1, -1))
-      }
-      "return (3,0) on input 'a3'" in {
-        tui.getRowAndColIndex("a3") should be((3, 0))
-      }
-      "return (-1,-1) on input 'abcdef123'" in {
-        tui.getRowAndColIndex("abcdef123") should be((-1, -1))
-      }
-      "return (-1,-1) on input '22'" in {
-        tui.getRowAndColIndex("22") should be((-1, -1))
-      }
-      "return (-1,-1) on input 'B?'" in {
-        tui.getRowAndColIndex("B?") should be((-1, -1))
-      }
-      "return (-1,-1) on input '  '" in {
-        tui.getRowAndColIndex("  ") should be((-1, -1))
-      }
-      "return (-1,-1) on input 'b15'" in {
-        tui.getRowAndColIndex("b15") should be((-1, -1))
-      }
-      "return (-1,-1) on input '1b'" in {
-        tui.getRowAndColIndex("1b") should be((-1, -1))
-      }
-      "the function getRowAndColIndex should return (-1,-1) on input 'bb'" in{
-        tui.getRowAndColIndex("bb") should be((-1,-1))
-       }
-    }
-
-     */
   }
 }

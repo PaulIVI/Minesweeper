@@ -37,4 +37,21 @@ class MinesMapStringTest extends AnyWordSpec with Matchers{
       printer.gameMapToString(example_game_map, example_current_game_map) should be(game_map_string)
     }
   }
+  "The Function generateRestOfGrid" should{
+    "Return a Grid with 4x4 without the first row" in{
+      val game_map_string = "0 # 1 ! ? \n1 4 ! ? # \n2 ! ? # 1 \n3 ? # 4 ! \n"
+      printer.generateRestOfGrid(example_game_map, example_current_game_map) should be(game_map_string)
+    }
+  }
+  "The Function addVectorElementToString" should{
+    "Return '! ' when the input on the coordinate of the current_game_map is a 2"in{
+      printer.addVectorElementToString(2, example_current_game_map(2), 2, 2, example_current_game_map) should be("! ")
+    }
+    "Return '? ' when the input on the coordinate of the current_game_map is a 3"in{
+      printer.addVectorElementToString(3, example_current_game_map(2), 2, 2, example_current_game_map) should be("? ")
+    }
+    "Return '# ' when the input on the coordinate of the current_game_map is a 0"in{
+      printer.addVectorElementToString(0, example_current_game_map(2), 2, 2, example_current_game_map) should be("# ")
+    }
+  }
 }

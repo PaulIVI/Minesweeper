@@ -5,7 +5,7 @@ import main.model.MinesMapHelper
 class MinesMapBase(difficulty: Int){
   val r = scala.util.Random
   val probability_for_mine = 0.16
-  var mine_map = Vector.fill(difficulty)(Vector.fill(difficulty)(
+  val mine_map = Vector.fill(difficulty)(Vector.fill(difficulty)(
     if (r.nextFloat < probability_for_mine) {
       9
     } else {

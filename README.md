@@ -1,2 +1,14 @@
+# Allgemeine Informationen
+Der gesamte Code für alle Abgaben ist in zwei Repositorys aufgeteilt.
+- Abgaben 1-4 & 11: Dieses Repository.
+- Abgaben 5-10: https://github.com/tillreitlinger/LCBilling
+
+Für die meisten Abgaben wurde ein extra Branch angelegt. Auf welchem Branch die Abgaben zu finden sind, kann in dem jeweiligen README des projektes nachgelesen werden.
+
 # Minesweeper [![Build Status](https://travis-ci.org/PaulIVI/Minesweeper.svg?branch=dev)](https://travis-ci.org/PaulIVI/Minesweeper) [![Coverage Status](https://coveralls.io/repos/github/PaulIVI/Minesweeper/badge.svg?branch=dev)](https://coveralls.io/github/PaulIVI/Minesweeper?branch=dev)
-In Scala entwickeltes Minesweeper spiel für die Konsole. 
+
+In Scala entwickeltes Minesweeper Spiel für die Konsole. 
+
+## Branches 
+- main -> Abgaben 1 bis 4
+- scala_3 -> Abgabe 11

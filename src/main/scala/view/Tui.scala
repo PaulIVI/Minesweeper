@@ -33,10 +33,10 @@ class Tui(controller: Controller) extends Observer {
       case None => {
         if (input_without_spaces == "s") controller.solve()
         else if (input_without_spaces == "q") println("Bis bald!")
-        else println("Unknown data type")
+        else println("Keine korrekte Eingabe. Oxy = Feld öffnen. Nxy = Feld merken. Fxy = Feld als Bombe markieren.")
 
       }
-      case _ => println("Unknown data type")
+      case _ => println("Keine korrekte Eingabe. Oxy = Feld öffnen. Nxy = Feld merken. Fxy = Feld als Bombe markieren.")
     }
   }
 

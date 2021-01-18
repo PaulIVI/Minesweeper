@@ -52,6 +52,8 @@ class TuiTest extends AnyWordSpec with Matchers{
       controller.mines_map.situation(4)(3) should be(0)
     }
     "open all fields in the game map if the player loose"in{
+      tui.processInputLine("nd4")
+      controller.mines_map.situation(4)(3) should be(3)
       tui.processInputLine("s")
       controller.mines_map.situation.map(n => n.map(m =>{
         m should be(1)

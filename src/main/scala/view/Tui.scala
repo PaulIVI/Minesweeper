@@ -36,7 +36,6 @@ class Tui(controller: Controller) extends Observer {
         else println("Keine korrekte Eingabe. Oxy = Feld öffnen. Nxy = Feld merken. Fxy = Feld als Bombe markieren.")
 
       }
-      case _ => println("Keine korrekte Eingabe. Oxy = Feld öffnen. Nxy = Feld merken. Fxy = Feld als Bombe markieren.")
     }
   }
 

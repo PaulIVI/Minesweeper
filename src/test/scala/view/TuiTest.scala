@@ -19,6 +19,11 @@ class TuiTest extends AnyWordSpec with Matchers{
     "do nothing on input 'qw5'" in {
       tui.processInputLine("qw5")
     }
+    "Return an Info if the inputString is wrong" in {
+      tui.processInputLine("xd4")
+    }
+
+
     "open one field in the game map on input 'ob2' " in {
       tui.processInputLine("ob2")
       controller.mines_map.situation(2)(1) should be(1)

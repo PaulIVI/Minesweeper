@@ -5,7 +5,7 @@ Der gesamte Code für alle Abgaben ist in zwei Repositorys aufgeteilt.
 
 Für die meisten Abgaben wurde ein extra Branch angelegt. Auf welchem Branch die Abgaben zu finden sind, kann in dem jeweiligen README des projektes nachgelesen werden.
 
-# Minesweeper [![Build Status](https://travis-ci.org/PaulIVI/Minesweeper.svg?branch=dev)](https://travis-ci.org/PaulIVI/Minesweeper) [![Coverage Status](https://coveralls.io/repos/github/PaulIVI/Minesweeper/badge.svg?branch=dev)](https://coveralls.io/github/PaulIVI/Minesweeper?branch=dev)
+# Minesweeper [![Build Status](https://travis-ci.org/PaulIVI/Minesweeper.svg?branch=main)](https://travis-ci.org/PaulIVI/Minesweeper) [![Coverage Status](https://coveralls.io/repos/github/PaulIVI/Minesweeper/badge.svg?branch=main)](https://coveralls.io/github/PaulIVI/Minesweeper?branch=main)
 
 In Scala entwickeltes Minesweeper Spiel für die Konsole. 
 
